@@ -10,10 +10,10 @@ int main(){
     cin >> a;
     alpha =a;
 
-    for(int cnt =0 ; cnt<5; cnt++){
+    while(abs(atest-a) ){
 
         atest = alpha*alpha;
-        cout << " approximation of sqrt : " << a << "in itration" << cnt << "is" << atest;
+        cout << " approximation of sqrt : " << a << "in itration" << "is" << atest;
         alpha = alpha/2 + a/(2*alpha);
     }
 
